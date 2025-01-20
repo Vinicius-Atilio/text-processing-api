@@ -21,7 +21,7 @@ class ProductTest {
 	}
 
 	@Test
-	void should_create_products() {
+	void shouldCreateProducts() {
 		assertEquals("MacBook", macBook.getName());
 		assertEquals("47", macBook.getCode());
 		assertEquals(13999, macBook.getPrice());
@@ -34,25 +34,25 @@ class ProductTest {
 		assertEquals("09", iPhone.getCode());
 		assertEquals(7689, iPhone.getPrice());
 
-		assertEquals("cellPhone", cellPhone.getName());
+		assertEquals("CellPhone", cellPhone.getName());
 		assertEquals("09", cellPhone.getCode());
 		assertEquals(3499, cellPhone.getPrice());
 	}
 
 	@Test
-	void should_product_not_be_equal() {
+	void shouldProductNotBeEqual() {
         assertNotEquals(macBook, iPhone);
         assertNotEquals(noteBook, cellPhone);
 	}
 
 	@Test
-	void should_hashcode_be_equal() {
+	void shouldHashCodeBeEqual() {
 		assertEquals(noteBook.hashCode(), macBook.hashCode());
 		assertEquals(cellPhone.hashCode(), iPhone.hashCode());
 	}
 
 	@Test
-	void should_hashcode_not_be_equal() {
+	void shouldHashCodeNotBeEqual() {
 		assertNotEquals(cellPhone.hashCode(), macBook.hashCode());
 		assertNotEquals(noteBook.hashCode(), iPhone.hashCode());
 	}

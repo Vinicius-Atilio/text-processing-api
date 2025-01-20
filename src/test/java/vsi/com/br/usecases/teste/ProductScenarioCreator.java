@@ -3,8 +3,6 @@ package vsi.com.br.usecases.teste;
 import vsi.com.br.usecases.product.Product;
 import vsi.com.br.usecases.product.ProductWithSize;
 
-import java.util.HashMap;
-
 public class ProductScenarioCreator {
 
     public static Product macBook() {
@@ -20,7 +18,7 @@ public class ProductScenarioCreator {
     }
 
     public static Product cellPhone() {
-        return new Product("cellPhone", "09", 3499);
+        return new Product("CellPhone", "09", 3499);
     }
 
     public static ProductWithSize macBookWithSize(int size) {
@@ -38,28 +36,4 @@ public class ProductScenarioCreator {
     public static ProductWithSize cellPhoneWithSize(int size) {
         return new ProductWithSize(cellPhone(), size);
     }
-
-    public static HashMap<Product, Integer> products() {
-        HashMap<Product, Integer> products = new HashMap<>();
-        products.put(macBook(), 1);
-        products.put(noteBook(), 1);
-        products.put(iPhone(), 3);
-        products.put(cellPhone(), 1);
-        return products;
-    }
-
-    public static HashMap<Product, Integer> onlyOneProduct() {
-        HashMap<Product, Integer> products = new HashMap<>();
-        products.put(macBook(), 1);
-        return products;
-    }
-
-    public static HashMap<Product, Integer> emptyProducts() {
-        return new HashMap<>();
-    }
-
-    public static HashMap<ProductWithSize, Integer> emptyProductsWithSize() {
-        return new HashMap<>();
-    }
-
 }
