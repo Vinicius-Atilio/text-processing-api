@@ -1,4 +1,4 @@
-package vsi.com.br.textprocessing.shared.Validators;
+package vsi.com.br.textprocessing.shared.validators;
 
 import java.util.Collection;
 import java.util.HashSet;

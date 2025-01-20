@@ -1,7 +1,7 @@
 package vsi.com.br.textprocessing.shared.request;
 
 import org.springframework.http.HttpStatus;
-import vsi.com.br.textprocessing.shared.Validators.ValueValidator;
+import vsi.com.br.textprocessing.shared.validators.ValueValidator;
 import vsi.com.br.textprocessing.shared.enums.ErrorType;
 import vsi.com.br.textprocessing.shared.exceptions.VSIException;
 
